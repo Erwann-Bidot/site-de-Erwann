@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>ClevCleanCover</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+
+<body>
+
+  <div class="banner">
+    <div class="container">
+      <h1>ClevCleanCover</h1>
+      <h2>It’s for those who move forward with power.</h2>
+      <a href="#" class="btn-blue">Achète STP</a>
+  </div>
+  
+  </div>
+   <div class="container">
+    <h2>1. Qu'est ce que nous vous vendons</h2>
+    <p>Une pochette d'ordinateur fabriquée en France à partir de balles de tennis recyclées, capable de recharger l'appareil lorsqu'il est à l'intérieur ou posé dessus.</p>
+    <p>A laptop sleeve made in France from recycled tennis balls, capable of charging the device when it’s inside or placed on top.</p>
+
+
+
+    <h2>2. Qui est notre CEO</h2>
+
+
+   <div class="co-founders">
+      <img class="co-founder" src="images/Profile copie.jpg" alt="Moi">
+    </div>
+    
+       <div >
+      <p>Erwann Bidot, un visionnaire infatigable, a bâti son empire avec une détermination sans faille. Parti de rien, il a travaillé sans relâche pour créer son entreprise, gravissant les échelons du succès jusqu'à atteindre le sommet. Devenu millionnaire, il s’est offert un somptueux yacht, symbole de son ascension fulgurante. Mais au-delà de sa réussite, Erwann a su redonner au monde : il consacre une partie de sa fortune à aider les enfants défavorisés dans les pays les plus pauvres, prouvant ainsi que le véritable succès se mesure aussi par la générosité.</p>
+       </div >
+      
+
+
+  <h2>3. C'est pour ceux qui avancent avec puissance.</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="images/shanghai.jpg" alt="shangai">
+      <h3>Buy in Shangai</h3>
+      <a href="javascript:void(0);" id="openTypeformLyon" class="btn-blue">Buy this model</a>
+    </div>
+
+    <div class="card">
+      <img src="images/Lyon.jpg" alt="Lyon">
+      <h3>Buy in Lyon</h3>
+      <a href="javascript:void(0);" id="openTypeformShanghai" class="btn-blue">Buy this model</a>
+    </div>
+  </div>
+  </div>
+    
+
+  <div id="typeformModalLyon" class="typeform-modal">
+    <span id="closeLyon" class="close-button">&times;</span>
+    <div data-tf-live="01JMZ551AYNBW07TZAM322E2Z6"></div>
+  </div>
+
+  <div id="typeformModalShanghai" class="typeform-modal">
+    <span id="closeShanghai" class="close-button">&times;</span>
+    <div data-tf-live="01JMZ59FR7PNDZEAM618CDHKCQ"></div>
+  </div>
+
+  <script>
+    function setupModal(buttonId, modalId, closeId) {
+      const button = document.getElementById(buttonId);
+      const modal = document.getElementById(modalId);
+      const close = document.getElementById(closeId);
+
+      button.addEventListener("click", function () {
+        modal.style.display = "flex";
+      });
+
+      close.addEventListener("click", function () {
+        modal.style.display = "none";
+      });
+
+      window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    }
+
+    setupModal("openTypeformLyon", "typeformModalLyon", "closeLyon");
+    setupModal("openTypeformShanghai", "typeformModalShanghai", "closeShanghai");
+  </script>
+
+  <script src="https://embed.typeform.com/next/embed.js"></script>
+</body>
+</html>
